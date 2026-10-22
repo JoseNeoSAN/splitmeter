@@ -33,9 +33,10 @@ def to_rgba_premultiplied_inverse(px, w, h, flip, crop_h=None, bg=(238, 240, 244
             g2 = min(255, g * 255 // a)
             b2 = min(255, b * 255 // a)
             af = a / 255.0
-            out.append(int(b2 * af + bg[2] * (1 - af)))
-            out.append(int(g2 * af + bg[1] * (1 - af)))
+            # PNG 是 RGB 顺序，必须按 R→G→B 写入；写反会让蓝变橙
             out.append(int(r2 * af + bg[0] * (1 - af)))
+            out.append(int(g2 * af + bg[1] * (1 - af)))
+            out.append(int(b2 * af + bg[2] * (1 - af)))
     return bytes(out), rows
 
 
