@@ -13,9 +13,9 @@
 
 ---
 
-## 它回答什么问题
+## 它解决了什么
 
-开着梯子的时候，你其实不知道三件事：
+开着梯子的时候，你是否在焦虑？
 
 - 眼前这点网速，是走了节点，还是漏成了直连？
 - 这个月烧掉的那几十 GB，有多少真的过了代理？
@@ -132,7 +132,10 @@ python tools/bmp2png.py %TEMP%\splitmeter_frame.bmp out.png 62 3
 
 ## 致谢
 
-分流的思路来自 mihomo 的 `/connections` 接口，以及 [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) 把管道名暴露得足够清楚。
+**Vibe Coding** —— 这个项目是人机协作的产物：人负责提需求、判断效果、挑毛病，AI 负责把它写成代码。
+致谢 [DeepSeek](https://www.deepseek.com/) 与梁圣（梁文锋）。
+
+**技术** —— 分流的思路来自 mihomo 的 `/connections` 接口，以及 [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) 把管道名暴露得足够清楚。
 
 ## License
 
