@@ -1,0 +1,16 @@
+# 构建产物
+build/
+dist/
+*.o
+*.exe
+
+# 分发包
+*.zip
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统
+Thumbs.db
+desktop.ini
